@@ -1,0 +1,33 @@
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.rate {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+label {
+    float: right;
+    font-size: 0;
+    color: #4d4d4d;
+    margin: 10px;
+}
+
+label::before /*lo que tendra el elemento antes de que aparezcaen pantalla*/ {
+    content: "\f004";
+    font-family: 'Font Awesome 5 free';
+    font-size: 60px;
+}
+
+label:hover,  label:hover~label {
+    color: #cc0000;
+    transition: 0.3s;
+}
+
+.active {
+    color: #cc0000;
+}
