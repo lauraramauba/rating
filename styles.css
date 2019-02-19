@@ -1,23 +1,25 @@
-.center {
-    text-align: center;
-    margin-top: 50px;
+body {
+    overflow: hidden;
+    background-color: #ffcce6;
 }
 
-.rate {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    border: none;
+.center {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
     float: right;
     font-size: 0;
-    color: #4d4d4d;
+    color: #fff;
     margin: 10px;
 }
 
-label::before /*lo que tendra el elemento antes de que aparezcaen pantalla*/ {
+label::before /*lo que tendra el elemento antes de que aparezca en pantalla*/ {
     content: "\f004";
     font-family: 'Font Awesome 5 free';
     font-size: 60px;
@@ -25,9 +27,11 @@ label::before /*lo que tendra el elemento antes de que aparezcaen pantalla*/ {
 
 label:hover,  label:hover~label {
     color: #cc0000;
-    transition: 0.3s;
+    transition: 0.8s;
+    font-weight: 900;
 }
 
 .active {
     color: #cc0000;
+    font-weight: 900;
 }
